@@ -87,6 +87,12 @@ main section {
     border-radius: 10px;
 }
 
+.botaoVerde:hover {
+    background-color: var(--verdeEscuro);
+    color: var(--verdeSuave);
+    transition-duration: 0.2s;
+}
+
 #imagemSecao1 {
     width: 400px;
     margin: auto;
@@ -178,6 +184,13 @@ main section {
     font-weight: bold;
     border-radius: 10px;
 }
+
+.botaoAmarelo:hover {
+    background-color: var(--pretoSuave);
+    color: var(--verdeAmarelo);
+    transition-duration: 0.2s;
+}
+
 
 #imagemSecao2 {
     width: 350px;
