@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* INTRODUCAO */
+
+.tituloIntroducao {
+    display: flex;
+    padding: 30px;
+    background-color: var(--verdeAmarelo);
+}
+
+.tituloIntroducao h1 {
+    font-size: 22;
+    color: var(--pretoSuave);
+}
+
+p {
+    padding: 30px;
+}
+
+ul {
+    font-weight: bold;
+    list-style-type: disc;
+}

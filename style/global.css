@@ -26,8 +26,52 @@ body {
     color: var(--verdeEscuro);
 }
 
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 span {
     font-weight: bold;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+.botaoVerde {
+    padding: 20px;
+    margin: 0px 30px 30px 30px;
+    font-size: 18px;
+    background-color: var(--verdeSuave);
+    color: var(--verdeEscuro);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.botaoVerde:hover {
+    background-color: var(--verdeEscuro);
+    color: var(--verdeSuave);
+    transition-duration: 0.2s;
+}
+
+.botaoAmarelo {
+    padding: 30px;
+    margin: 30px;
+    font-size: 18px;
+    background-color: var(--verdeAmarelo);
+    color: var(--pretoSuave);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.botaoAmarelo:hover {
+    background-color: var(--pretoSuave);
+    color: var(--verdeAmarelo);
+    transition-duration: 0.2s;
 }
 
 /* CELULAR */
@@ -38,11 +82,6 @@ h1 {
 
 p {
     font-size: 16px;
-}
-
-button {
-    all: unset;
-    cursor: pointer;
 }
 
 /* CABEÇALHO */
@@ -131,8 +170,8 @@ html {
 
 .voltarTopo {
     position: fixed;
-    bottom: 20px;    /* distância da parte de baixo */
-    right: 20px;      /* distância da esquerda */
+    bottom: 20px;   
+    right: 20px;     
     z-index: 999;
     width: 30px;
     height: 30px;
