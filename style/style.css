@@ -156,7 +156,7 @@ header img {
 /* RODAPÉ */
 
 footer {
-    font-size: 11px;
+    font-size: 0.7em;
 }
 
 .imagensRodape {
@@ -212,9 +212,7 @@ footer ul li::before {
 
 footer p {
     margin: 30px;
-
     text-align: left;
-    font-size: 11px;
 }
 
 html {
