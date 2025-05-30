@@ -1,0 +1,61 @@
+/* PRINCIPAL */
+
+#imagemSecao1 {
+    max-width: 100%;
+    height: auto;
+    padding: 0px 30px;
+}
+
+.faixaAviso {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--pretoSuave);
+    background-color: var(--verdeAmarelo);
+    padding: 15px 30px;
+}
+
+.faixaAviso h2 {
+    font-size: 1em;
+}
+
+.faixaAviso p {
+    text-align: left;
+}
+
+.linhaEnfeite {
+    background-color: var(--pretoSuave);
+    border-radius: 100px;
+    width: 2px;
+    height: 60px;
+}
+
+#principal2 h1 {
+    text-align: left;
+    padding: 30px;
+}
+
+#principal2 ul {
+    font-weight: bold;
+    padding: 0px 30px;
+}
+
+#principal2 ul li {
+    padding-bottom: 15px;
+}
+
+
+#principal3 {
+    background-color: var(--verdeSuave);
+    margin-top: 30px;
+}
+
+#principal3 h1 {
+    text-align: left;
+}
+
+#imagemSecao2 {
+    max-width: 100%;
+    height: auto;
+    padding: 0px 30px 30px 30px;
+}

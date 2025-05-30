@@ -59,6 +59,10 @@ button {
     transition-duration: 0.3s;
 }
 
+.linkDoBotao {
+    text-decoration: none;
+}
+
 .botaoAmarelo {
     margin: 30px;
     padding: 20px 30px;
@@ -104,7 +108,9 @@ header img {
 }
 
 #menu {
-    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
     position: absolute;
     top: 60px;
     right: 20px;
@@ -113,7 +119,9 @@ header img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 15px 30px;
     z-index: 999;
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }
+
 
 .seta {
     width: 0;
@@ -139,66 +147,10 @@ header img {
     font-weight: bold;
 }
 
-/* PRINCIPAL */
-
-#imagemSecao1 {
-    max-width: 100%;
-    height: auto;
-    padding: 0px 30px;
-}
-
-.faixaAviso {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: var(--pretoSuave);
-    background-color: var(--verdeAmarelo);
-    padding: 15px 30px;
-}
-
-.faixaAviso h2 {
-    font-size: 1em;
-}
-
-.faixaAviso p {
-    text-align: left;
-}
-
-.linhaEnfeite {
-    background-color: var(--pretoSuave);
-    border-radius: 100px;
-    width: 2px;
-    height: 60px;
-}
-
-#principal2 h1 {
-    text-align: left;
-    padding: 30px;
-}
-
-#principal2 ul {
-    font-weight: bold;
-    padding: 0px 30px;
-}
-
-#principal2 ul li {
-    padding-bottom: 15px;
-}
-
-
-#principal3 {
-    background-color: var(--verdeSuave);
-    margin-top: 30px;
-}
-
-#principal3 h1 {
-    text-align: left;
-}
-
-#imagemSecao2 {
-    max-width: 100%;
-    height: auto;
-    padding: 0px 30px 30px 30px;
+#menu.ativo {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 /* RODAPÉ */
