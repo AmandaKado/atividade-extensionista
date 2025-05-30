@@ -142,6 +142,7 @@ header img {
 }
 
 #menu a {
+    font-weight: bold;
     display: block;
     padding: 0.5rem 0;
     color: var(--verdeEscuro);
@@ -149,9 +150,8 @@ header img {
 }
 
 #menu a:hover {
-    color: var(--pretoSuave);
+    color: var(--brancoSuave);
     transition-duration: 0.3s;
-    font-weight: bold;
 }
 
 #menu.ativo {
