@@ -42,6 +42,15 @@ button {
     cursor: pointer;
 }
 
+ul, ol {
+    font-weight: bold;
+    padding: 0px 30px;
+}
+
+ul li, ol li {
+    padding-bottom: 15px;
+}
+
 .botaoVerde {
     padding: 20px 30px;
     margin: 30px;
@@ -78,8 +87,6 @@ button {
     color: var(--verdeAmarelo);
     transition-duration: 0.2s;
 }
-
-/* PADRÃO CELULAR */
 
 h1 {
     font-size: 2em;
@@ -169,14 +176,15 @@ footer {
 }
 
 .iconePorquinho {
-    width: 60px;
-    margin: 30px;
+    width: 100px;
+    height: auto;
+    padding: 15px;
 }
 
 .instagram, .facebook, .whatsapp {
     border-radius: 100px;
     width: 30px;
-    margin: 15px;
+    margin-left: 10px;
 }
 
 footer section {
@@ -188,7 +196,7 @@ footer h3 {
 }
 
 footer ul {
-    margin: 15px 30px;
+    margin: 30px;
     list-style: none;
     padding-left: 0;
 }
@@ -201,7 +209,7 @@ footer ul li {
 footer ul li::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 0;
     transform: translateY(-50%);
     width: 5px;

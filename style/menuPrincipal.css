@@ -35,16 +35,6 @@
     padding: 30px;
 }
 
-#principal2 ul {
-    font-weight: bold;
-    padding: 0px 30px;
-}
-
-#principal2 ul li {
-    padding-bottom: 15px;
-}
-
-
 #principal3 {
     background-color: var(--verdeSuave);
     margin-top: 30px;
