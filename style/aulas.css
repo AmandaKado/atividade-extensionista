@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/* JANELA DE DICAS */
+
+.janelaDicas {
+    border: 5px solid var(--verdeAmarelo);
+    border-radius: 10px;
+    margin: 30px 30px 0px 30px;
+    padding: 15px 0px;
+}
+
+/* INTRODUÇÃO */
+
+.tituloAmarelo {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--verdeAmarelo);
+    margin: 30px 0px;
+    padding: 30px;
+}
+
+.titulo {
+    font-size: 2em;
+    text-align: left;
+    padding: 0;
+    color: var(--pretoSuave);
+}
+
+.imagemAmarelo {
+    width: 60px;
+    height: auto;
+    padding: 0;
+}
+
+/* SEÇÃO 1 */
+
+.titulosAulas {
+    display: flex;
+    align-items: center;
+    background-color: var(--verdeSuave);
+    margin: 30px 0px;
+    padding: 30px;
+}
+
+.numeroAula {
+    font-size: 4em;
+    padding: 0px;
+}
+
+.enfeiteLinha {
+    width: 2px;
+    height: 60px;
+    border-radius: 100px;
+    background-color: var(--verdeEscuro);
+    margin: 0px 10px;
+}
+
+.tituloAulaNumerada {
+    font-size: 1.5em;
+    text-align: left;
+    padding: 0px;
+}
+
+/**/
