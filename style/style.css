@@ -189,6 +189,10 @@ footer {
     margin-left: 10px;
 }
 
+.imagensRodape a:hover {
+    text-decoration: none;
+}
+
 footer section {
     display: flex;
 }
