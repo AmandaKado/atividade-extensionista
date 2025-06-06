@@ -198,7 +198,7 @@ footer h3 {
 }
 
 footer ul {
-    margin: 30px;
+    margin: 0px 30px;
     list-style: none;
     padding-left: 0;
 }
@@ -223,6 +223,16 @@ footer ul li::before {
 footer p {
     margin: 30px;
     text-align: left;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--pretoSuave);
+}
+
+footer a:hover {
+    color: var(--verdeEscuro);
+    text-decoration: underline;
 }
 
 html {
