@@ -9,25 +9,28 @@
 .faixaAviso {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
     color: var(--pretoSuave);
     background-color: var(--verdeAmarelo);
-    padding: 15px 30px;
+    padding: 30px;
 }
 
 .faixaAviso h2 {
-    font-size: 1em;
+    font-size: 1.5em;
+    padding: 0;
 }
 
 .faixaAviso p {
     text-align: left;
+    padding: 0;
 }
 
 .linhaEnfeite {
     background-color: var(--pretoSuave);
     border-radius: 100px;
     width: 2px;
-    height: 60px;
+    height: 30px;
+    margin: 0px 15px;
 }
 
 #principal2 h1 {
