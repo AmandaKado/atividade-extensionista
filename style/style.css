@@ -225,7 +225,7 @@ footer ul li::before {
 }
 
 footer p {
-    margin: 30px;
+    padding: 30px;
     text-align: left;
 }
 
