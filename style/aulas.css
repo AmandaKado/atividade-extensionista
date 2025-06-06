@@ -3,16 +3,17 @@
 /* ELEMENTOS */
 
 .janelaDicas {
+    display: flex;
     border: 5px solid var(--verdeAmarelo);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.281);
     margin: 15px 30px 0px 30px;
     padding: 15px 0px;
     text-align: left;
 }
 
 .janelaDicas:hover {
-    background-color: rgba(250, 245, 171, 0.7);
+    background-color: rgba(250, 245, 171, 0.425);
 }
 
 #divisao {
@@ -117,5 +118,5 @@
 }
 
 #tabela tbody tr:hover {
-    background-color: #e0f7fa;
+    background-color: #e0fae4;
 }
