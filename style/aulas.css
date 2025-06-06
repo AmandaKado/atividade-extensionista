@@ -5,9 +5,14 @@
 .janelaDicas {
     border: 5px solid var(--verdeAmarelo);
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     margin: 15px 30px 0px 30px;
     padding: 15px 0px;
     text-align: left;
+}
+
+.janelaDicas:hover {
+    background-color: rgba(250, 245, 171, 0.7);
 }
 
 #divisao {
@@ -70,4 +75,47 @@
     font-size: 1.5em;
     text-align: left;
     padding: 0px;
+}
+
+
+/* TABELA */
+
+#tabela {
+    width: 80%; 
+    max-width: 600px; 
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px auto; 
+}
+
+#tabela th,
+#tabela td {
+    padding: 12px 15px; 
+    border: 1px solid #ddd;
+    word-wrap: wrap;
+}
+
+#tabela thead {
+    background-color: rgba(144, 238, 144, 0.7);
+    color: #333;
+}
+
+#tabela thead th {
+    text-align: center;
+    font-weight: bold;
+}
+
+#tabela tbody td {
+    text-align: left;
+    vertical-align: top;
+}
+
+#tabela tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#tabela tbody tr:hover {
+    background-color: #e0f7fa;
 }
