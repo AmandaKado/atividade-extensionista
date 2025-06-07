@@ -7,6 +7,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="../style/calculadora.css">
         <title>Spark Fin</title>
 
     </head>
@@ -31,33 +32,34 @@
 
             <section class="fundoVerde">
 
-                <img src="../media/triste.png" alt="iconeTriste">
-                <img src="../media/neutro.png" alt="iconeNeutro">
-                <img src="../media/feliz.png" alt="iconeFeliz">
+                <div class="imagensCarinhas">
+                    <img src="../media/triste.png" alt="iconeTriste">
+                    <img src="../media/neutro.png" alt="iconeNeutro">
+                    <img src="../media/feliz.png" alt="iconeFeliz">
+                </div>
 
-                <h1>Simule sua Economia Mensal</h1>
+                <h1 class="tituloSimulacao">Simule sua Economia Mensal</h1>
 
-                <p>Vamos calcular quanto você pode economizar com base no que você ganha.</p>
+                <p class="paragrafoCalculadora">Vamos calcular quanto você pode economizar com base no que você ganha.</p>
                 
-                <div>
-                    <h1>Salário Mensal</h1>
-                    <h1>R$</h1>
-                    <input type="number" placeholder="0,00"></input>
+                <div class="inputsBlocos">
+                    <div>
+                        <label>Salário Mensal</label>
+                        <input type="number" placeholder="R$ 0,00"></input>
+                    </div>
+                    <div>
+                        <label>Gastos Fixos</label>
+                        <input type="number" placeholder="R$ 0,00"></input>
+                    </div>
+                    <div>
+                        <label>Objetivo</label>
+                        <input type="number" placeholder="R$ 0,00"></input>
+                    </div>
                 </div>
 
-                <div>
-                    <h1>Gastos Fixos</h1>
-                    <h1>R$</h1>
-                    <input type="number" placeholder="0,00"></input>
-                </div>
-
-                <div>
-                    <h1>Objetivo</h1>
-                    <h1>R$</h1>
-                    <input type="number" placeholder="0,00"></input>
-                </div>
-
-                <button type="button">GERAR SUGESTÃO</button>
+                <a href="#" class="botaoGerador">
+                    <button type="button">GERAR SUGESTÃO</button>
+                </a>
 
             </section>
 
@@ -71,9 +73,17 @@
 
             <section class="fundoVerde">
 
-                <img src="../media/triste.png" alt="Icone Triste">
-                <h1>Situação Crítica!</h1>
-                <p>Parece que todo o seu salário está sendo comprometido. Que tal começar controlando seus gastos fixos e identificar para onde está indo o seu dinheiro? Mesmo guardar R$10 por mês já é um bom começo. O importante é criar o hábito!</p>
+                <img src="../media/triste.png" alt="Icone Triste" class="iconeTriste">
+                <h1 class="tituloSituacao">Situação Crítica!</h1>
+                <p>Sua situação atual indica que seus gastos fixos superam sua renda. Para alcançar sua meta, é crucial primeiro rever seus gastos e, se possível, buscar formas de aumentar sua renda ou renegociar suas dívidas. Sugerimos que, antes de focar em uma meta de economia, você crie um plano para equilibrar suas finanças.</p>
+
+                <img src="../media/neutro.png" alt="Icone Neutra" class="iconeNeutra">  
+                <h1 class="tituloSituacao">Situação Neutra!</h1>
+                <p>Seu salário cobre seus gastos fixos, mas não sobra margem para economia. Para atingir sua meta, você precisará identificar gastos variáveis que possam ser cortados ou buscar alternativas para aumentar sua renda. Pequenas mudanças podem fazer uma grande diferença!</p>
+
+                <img src="../media/feliz.png" alt="Icone Feliz" class="iconeFeliz">
+                <h1 class="tituloSituacao">Situação Ótima!</h1>
+                <p>Parabéns! Sua situação financeira permite que você economize confortavelmente para alcançar sua meta. Com base no seu objetivo e prazo, sugerimos que você economize <span class="valorEconomizar"></span> para atingi-lo em <span class="mesesEconomizar"></span></p>
 
             </section>
 
