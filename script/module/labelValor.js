@@ -17,8 +17,8 @@ export function initLabelValor() {
 
         // Formata para o padrão de dinheiro do Brasil
         valor = (Number(valor) / 100).toLocaleString('pt-BR', {
-          minimumFractionDigits: 2,
-          maximumFractionDigits: 2,
+          style: 'currency',
+          currency: 'BRL',
         });
 
         // Devolve o valor formatado para a caixinha
