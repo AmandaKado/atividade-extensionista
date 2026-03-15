@@ -29,17 +29,12 @@ export function initCalculadora() {
 
   btnGerar.addEventListener('click', (e) => {
     e.preventDefault();
-
-    // 1. Captura dos 3 inputs
     const salario = parseFloat(inputs[0].value) || 0;
     const gastos = parseFloat(inputs[1].value) || 0;
     const objetivoTotal = parseFloat(inputs[2].value) || 0;
-
-    // 2. Lógica de Negócio: Cálculo para 2 anos
     const valorMensalNecessario = objetivoTotal / 24;
     const saldoDisponivel = salario - gastos;
 
-    // 3. Atualiza o valor dinâmico na seção de resultado
     if (displayValorCalculado) {
       displayValorCalculado.innerText = valorMensalNecessario.toLocaleString(
         'pt-BR',
