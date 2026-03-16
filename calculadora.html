@@ -65,29 +65,31 @@
 
             </section>
 
-            <section id="mensagemDica">
-
+            <section id="mensagemDica" style="display: none;">
                 <p>De acordo com seu salário e gastos fixos mensais, para conseguir alcançar seu objetivo financeiro em 2 anos, será preciso economizar mensalmente:</p>
-                <h1>R$ 1000</h1>
+                <h1 id="valorCalculado">R$ 0,00</h1>
                 <p>Se não pode economizar esse valor no momento, comece com um valor pequeno e vá aumentando aos poucos!</p>
-
             </section>
-
-            <section class="fundoVerde">
-
-                <img src="media/triste.png" alt="Icone Triste" class="iconeTriste icones">
-                <h1 class="tituloSituacao">Situação Crítica!</h1>
-                <p>Sua situação atual indica que seus gastos fixos superam sua renda. Para alcançar sua meta, é crucial primeiro rever seus gastos e, se possível, buscar formas de aumentar sua renda ou renegociar suas dívidas. Sugerimos que, antes de focar em uma meta de economia, você crie um plano para equilibrar suas finanças.</p>
-
-                <img src="media/neutro.png" alt="Icone Neutra" class="iconeNeutra icones">  
-                <h1 class="tituloSituacao">Situação Neutra!</h1>
-                <p>Seu salário cobre seus gastos fixos, mas não sobra margem para economia. Para atingir sua meta, você precisará identificar gastos variáveis que possam ser cortados ou buscar alternativas para aumentar sua renda. Pequenas mudanças podem fazer uma grande diferença!</p>
-
-                <img src="media/feliz.png" alt="Icone Feliz" class="iconeFeliz icones">
-                <h1 class="tituloSituacao">Situação Ótima!</h1>
-                <p>Parabéns! Sua situação financeira permite que você economize confortavelmente para alcançar sua meta. Com base no seu objetivo e prazo, sugerimos que você economize <span class="valorEconomizar"></span> para atingi-lo em <span class="mesesEconomizar"></span></p>
-
-            </section>
+            
+            <section id="secaoSituacoes" class="fundoVerde" style="display: none;">
+            
+                <div id="situacaoCritica" style="display: none;">
+                    <img src="media/triste.png" alt="Icone Triste" class="iconeTriste icones">
+                    <h1 class="tituloSituacao">Situação Crítica!</h1>
+                    <p>Sua situação atual indica que seus gastos fixos superam sua renda. Para alcançar sua meta, é crucial primeiro rever seus gastos e, se possível, buscar formas de aumentar sua renda ou renegociar suas dívidas. Sugerimos que, antes de focar em uma meta de economia, você crie um plano para equilibrar suas finanças.</p>
+                </div>
+            
+                <div id="situacaoNeutra" style="display: none;">
+                    <img src="media/neutro.png" alt="Icone Neutra" class="iconeNeutra icones">
+                    <h1 class="tituloSituacao">Situação Neutra!</h1>
+                    <p>Seu salário cobre seus gastos fixos, mas não sobra margem para economia. Para atingir sua meta, você precisará identificar gastos variáveis que possam ser cortados ou buscar alternativas para aumentar sua renda. Pequenas mudanças podem fazer uma grande diferença!</p>
+                </div>
+            
+                <div id="situacaoOtima" style="display: none;">
+                    <img src="media/feliz.png" alt="Icone Feliz" class="iconeFeliz icones">
+                    <h1 class="tituloSituacao">Situação Ótima!</h1>
+                    <p>Parabéns! Sua situação financeira permite que você economize confortavelmente para alcançar sua meta. Com base no seu objetivo e prazo, sugerimos que você economize <span class="valorEconomizar"></span> para atingi-lo em <span class="mesesEconomizar"></span>.</p>
+                </div>  </section>
 
             <section class="faixaAviso">
 
