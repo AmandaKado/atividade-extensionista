@@ -1,6 +1,9 @@
 @charset "utf-8";
 
 .fundoVerde {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 30px 0 0 0;
     padding: 30px;
     background-color: var(--verdeSuave);
@@ -9,6 +12,8 @@
 .imagensCarinhas {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     margin: 30px 0;
     gap: 30px;
 }
@@ -150,6 +155,7 @@ p {
 
 .icones {
     width: 200px;
+    height: auto;
 }
 
 .faixaAviso {
@@ -176,4 +182,11 @@ p {
     width: 2px;
     height: 30px;
     background-color: var(--pretoSuave);
+}
+
+#situacaoCritica, #situacaoNeutra, #situacaoOtima {
+    display: flex; /* Transforma a div em um container Flexbox */
+    flex-direction: column; /* Empilha os filhos verticalmente (ícone acima do texto) */
+    align-items: center; /* Centraliza horizontalmente os filhos (ícone e texto) */
+    text-align: center; /* Centraliza o texto dentro dos parágrafos e títulos */
 }
