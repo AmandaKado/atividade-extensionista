@@ -117,7 +117,7 @@ header {
 }
 
 header img {
-    height: 40px;
+    height: 30px;
     cursor: pointer;
 }
 
@@ -135,7 +135,6 @@ header img {
     z-index: 999;
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
-
 
 .seta {
     width: 0;
@@ -180,6 +179,11 @@ footer {
 
 .imagensRodape div {
     margin: 30px;
+}
+
+#iconeHeader {
+    width: 80px;
+    height: auto;
 }
 
 .iconePorquinho {

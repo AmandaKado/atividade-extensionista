@@ -33,6 +33,11 @@
     margin: 0px 15px;
 }
 
+#principal1 p, #principal3 p, #principal2 p {
+    text-align: left;
+    padding: 0px 30px;
+}
+
 #principal2 h1 {
     text-align: left;
     padding: 30px;
