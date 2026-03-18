@@ -1,161 +1,137 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
 
-    <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/calculadora.css">
+    <title>Spark Fin</title>
+</head>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style/style.css">
-        <link rel="stylesheet" href="style/calculadora.css">
-        <title>Spark Fin</title>
-
-    </head>
-
-    <body id="topo">
-
-        <header>
-
-            <a href="index.html">
-                <img id="iconeHeader" src="media/icon-sparkfin-vetor.svg" alt="Marca SparkFin">
-            </a>
-            <img id="menuHamburguer" src="media/hamburger.png" alt="Clique para abrir o menu">
-            <nav id="menu" class="menuSuspenso">
-                <div class="seta"></div>
-                <a href="index.html">Menu Inicial</a>
-                <a href="calculadora.html">Calculadora Financeira</a>
-                <a href="aulas.html">Aulas Educação Financeira →</a>
-            </nav>
-
-        </header>
-        <main>
-
-            <section class="fundoVerde animarScroll">
-
-                <div class="imagensCarinhas">
-                    <img src="media/triste.png" alt="iconeTriste">
-                    <img src="media/neutro.png" alt="iconeNeutro">
-                    <img src="media/feliz.png" alt="iconeFeliz">
-                </div>
-
-                <h1 class="tituloSimulacao">
-                    Simule sua <br> Economia Mensal
-                </h1>
-
-                <p class="paragrafoCalculadora">Vamos calcular quanto você pode economizar com base no que você ganha.</p>
-                
-                <div class="inputsBlocos">
-                    <div>
-                        <label class="n1">Salário Mensal</label>
-                        <input class="mascaraDinheiro" inputmode="numeric" placeholder="R$   0,00">
-                    </div>  
-                    <div>
-                        <label class="n2">Gastos Fixos</label>
-                        <input class="mascaraDinheiro" inputmode="numeric" placeholder="R$   0,00">
-                    </div>
-                    <div>
-                        <label class="n3">Objetivo</label>
-                        <input class="mascaraDinheiro" inputmode="numeric" placeholder="R$   0,00">
-                    </div>
-                </div>
-
-                <div id="mensagemErroFormulario" class="erroFormulario" style="display: none;">      </div>
-
-                <button type="button" class="botaoCalcular" id="btnGerar">GERAR SUGESTÃO</button>
-
-            </section>
-
-            <section  id="mensagemDica" class="animarScroll" style="display: none;">
-                <p>De acordo com seu salário e gastos fixos mensais, para conseguir alcançar seu objetivo financeiro em 2 anos, será preciso economizar mensalmente:</p>
-                <h1 id="valorCalculado">R$ 0,00</h1>
-                <p>Se não pode economizar esse valor no momento, comece com um valor pequeno e vá aumentando aos poucos!</p>
-            </section>
-            
-            <section id="secaoSituacoes" class="fundoVerde animarScroll" style="display: none;">
-            
-                <div id="situacaoCritica" style="display: none;">
-                    <img src="media/triste.png" alt="Icone Triste" class="iconeTriste icones">
-                    <h1 class="tituloSituacao">Situação Crítica!</h1>
-                    <p>Sua situação atual indica que seus gastos fixos superam sua renda. Para alcançar sua meta, é crucial primeiro rever seus gastos e, se possível, buscar formas de aumentar sua renda ou renegociar suas dívidas. Sugerimos que, antes de focar em uma meta de economia, você crie um plano para equilibrar suas finanças.</p>
-                </div>
-            
-                <div id="situacaoNeutra" style="display: none;">
-                    <img src="media/neutro.png" alt="Icone Neutra" class="iconeNeutra icones">
-                    <h1 class="tituloSituacao">Situação Neutra!</h1>
-                    <p>Seu salário cobre seus gastos fixos, mas não sobra margem para economia. Para atingir sua meta, você precisará identificar gastos variáveis que possam ser cortados ou buscar alternativas para aumentar sua renda. Pequenas mudanças podem fazer uma grande diferença!</p>
-                </div>
-            
-                <div id="situacaoOtima" style="display: none;">
-                    <img src="media/feliz.png" alt="Icone Feliz" class="iconeFeliz icones">
-                    <h1 class="tituloSituacao">Situação Ótima!</h1>
-                    <p>Parabéns! Sua situação financeira permite que você economize confortavelmente para alcançar sua meta. Com base no seu objetivo e prazo, sugerimos que você economize <span class="valorEconomizar"></span> para atingi-lo em <span class="mesesEconomizar"></span>.</p>
-                </div>  </section>
-
-            <section class="faixaAviso animarScroll">
-
-                <h2>Acesse Grátis</h2>
-                <div class="linhaEnfeite"></div>
-                <p>Aulas completas e fáceis de entender</p>
-
-            </section>
-
-        </main>
-        
-        <footer class="animarScroll">
-
-            <section class="imagensRodape">
-                <img class="iconePorquinho" src="media/icone-sparkfin.png" alt="Icone SparkFin">
-                <div>
-                    <a href="https://www.instagram.com/a.m.kado?igsh=ZXN6ZDRlemdsamdy">
-                        <img class="instagram" src="media/instagram.png" alt="Icone do Instagram">
-                    </a>
-                    <a href="https://www.facebook.com/share/1BbFeegDQR/">
-                        <img class="facebook" src="media/facebook.png" alt="Icone do Facebook">
-                    </a>
-                    <a href="https://wa.me/47984186031?text=Oi%2C%20vim%20do%20site%20de%20Educa%C3%A7%C3%A3o%20Financeira%20b%C3%A1sica!%20">
-                        <img class="whatsapp" src="media/whatsapp.png" alt="Icone do Whatsapp">
-                    </a>
-                </div>
-            </section>
-
-            <section>
-                <div>
-                    <h3>Páginas:</h3>
-                    <ul>
-                        <a href="index.html">
-                            <li>Menu inicial</li>
-                        </a>
-                        <a href="aulas.html">
-                            <li>Aulas Grátis</li>
-                        </a>
-                        <a href="calculadora.html">
-                            <li>Calculadora</li>
-                        </a>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Informações:</h3>
-                    <ul>
-                        <a href="#">
-                            <li>FAQ</li>
-                        </a>
-                        <a href="#">
-                            <li>Termos e Condições</li>
-                        </a>
-                    </ul>
-                </div>
-            </section>
-
-            <p><span>Desenvolvido por Amanda Mayumi Kado - RU 5069371</span></p>
-
-        </footer>
-
-        <a href="#topo" class="voltarTopo">
-            <img src="media/seta.png" alt="Seta para voltar ao topo">
+<body id="topo">
+    <header>
+        <a href="index.html">
+            <img id="iconeHeader" src="media/icon-sparkfin-vetor.svg" alt="Marca SparkFin">
         </a>
+        <img id="menuHamburguer" src="media/hamburger.png" alt="Clique para abrir o menu">
+        <nav id="menu" class="menuSuspenso">
+            <div class="seta"></div>
+            <a href="index.html">Menu Inicial</a>
+            <a href="calculadora.html">Calculadora Financeira</a>
+            <a href="aulas.html">Aulas Educação Financeira →</a>
+        </nav>
+    </header>
 
-        <script type="module" src="script/script.js"></script>
-            
-    </body>
+    <main>
+        <section class="fundoVerde animarScroll">
+            <div class="imagensCarinhas">
+                <img src="media/triste.png" alt="iconeTriste">
+                <img src="media/neutro.png" alt="iconeNeutro">
+                <img src="media/feliz.png" alt="iconeFeliz">
+            </div>
+
+            <h1 class="tituloSimulacao">
+                Simule sua <br> Economia Mensal
+            </h1>
+
+            <p class="paragrafoCalculadora">Vamos calcular quanto você pode economizar com base no que você ganha.</p>
+
+            <div class="inputsBlocos">
+                <div>
+                    <label class="n1">Salário Mensal</label>
+                    <input class="mascaraDinheiro" inputmode="numeric" placeholder="R$   0,00">
+                </div>
+                <div>
+                    <label class="n2">Gastos Fixos</label>
+                    <input class="mascaraDinheiro" inputmode="numeric" placeholder="R$   0,00">
+                </div>
+                <div>
+                    <label class="n3">Objetivo</label>
+                    <input class="mascaraDinheiro" inputmode="numeric" placeholder="R$   0,00">
+                </div>
+            </div>
+
+            <div id="mensagemErroFormulario" class="erroFormulario" style="display: none;"></div>
+
+            <button type="button" class="botaoCalcular" id="btnGerar">GERAR SUGESTÃO</button>
+        </section>
+
+        <section id="mensagemDica" class="animarScroll" style="display: none;">
+            <p>De acordo com seu salário e gastos fixos mensais, para conseguir alcançar seu objetivo financeiro em 2 anos, será preciso economizar mensalmente:</p>
+            <h1 id="valorCalculado">R$ 0,00</h1>
+            <p>Se não pode economizar esse valor no momento, comece com um valor pequeno e vá aumentando aos poucos!</p>
+        </section>
+
+        <section id="secaoSituacoes" class="fundoVerde animarScroll" style="display: none;">
+            <div id="situacaoCritica" style="display: none;">
+                <img src="media/triste.png" alt="Icone Triste" class="iconeTriste icones">
+                <h1 class="tituloSituacao">Situação Crítica!</h1>
+                <p>Sua situação atual indica que seus gastos fixos superam sua renda. Para alcançar sua meta, é crucial primeiro rever seus gastos e, se possível, buscar formas de aumentar sua renda ou renegociar suas dívidas. Sugerimos que, antes de focar em uma meta de economia, você crie um plano para equilibrar suas finanças.</p>
+            </div>
+
+            <div id="situacaoNeutra" style="display: none;">
+                <img src="media/neutro.png" alt="Icone Neutra" class="iconeNeutra icones">
+                <h1 class="tituloSituacao">Situação Neutra!</h1>
+                <p>Seu salário cobre seus gastos fixos, mas não sobra margem para economia. Para atingir sua meta, você precisará identificar gastos variáveis que possam ser cortados ou buscar alternativas para aumentar sua renda. Pequenas mudanças podem fazer uma grande diferença!</p>
+            </div>
+
+            <div id="situacaoOtima" style="display: none;">
+                <img src="media/feliz.png" alt="Icone Feliz" class="iconeFeliz icones">
+                <h1 class="tituloSituacao">Situação Ótima!</h1>
+                <p>Parabéns! Sua situação financeira permite que você economize confortavelmente para alcançar sua meta. Com base no seu objetivo e prazo, sugerimos que você economize <span class="valorEconomizar"></span> para atingi-lo em <span class="mesesEconomizar"></span>.</p>
+            </div>
+        </section>
+
+        <section class="faixaAviso animarScroll">
+            <h2>Acesse Grátis</h2>
+            <div class="linhaEnfeite"></div>
+            <p>Aulas completas e fáceis de entender</p>
+        </section>
+    </main>
+
+    <footer>
+        <section class="imagensRodape animarScroll">
+            <img class="iconePorquinho" src="media/icone-sparkfin.png" alt="Icone SparkFin">
+            <div>
+                <a href="https://www.instagram.com/a.m.kado?igsh=ZXN6ZDRlemdsamdy" target="_blank">
+                    <img class="instagram" src="media/instagram.png" alt="Icone do Instagram">
+                </a>
+                <a href="https://www.facebook.com/share/1BbFeegDQR/" target="_blank">
+                    <img class="facebook" src="media/facebook.png" alt="Icone do Facebook">
+                </a>
+                <a href="https://wa.me/47984186031?text=Oi%2C%20vim%20do%20site%20de%20Educa%C3%A7%C3%A3o%20Financeira%20b%C3%A1sica!%20" target="_blank">
+                    <img class="whatsapp" src="media/whatsapp.png" alt="Icone do Whatsapp">
+                </a>
+            </div>
+        </section>
+
+        <section class="animarScroll">
+            <div>
+                <h3>Páginas:</h3>
+                <ul>
+                    <li><a href="index.html">Menu inicial</a></li>
+                    <li><a href="aulas.html">Aulas Grátis</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Informações:</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Termos e Condições</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <p><span>Desenvolvido por Amanda Mayumi Kado - RU 5069371</span></p>
+    </footer>
+
+    <a href="#topo" class="voltarTopo">
+        <img src="media/seta.png" alt="Seta para voltar ao topo">
+    </a>
+
+    <script type="module" src="script/script.js"></script>
+</body>
 
 </html>
