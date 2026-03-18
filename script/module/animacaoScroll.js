@@ -1,28 +1,37 @@
+/**
+ * Módulo: Animação ao Rolar (Scroll)
+ * Responsável por detectar a entrada de elementos na tela e disparar transições CSS.
+ */
+
 export function initAnimacaoScroll() {
+  // Seleciona todos os elementos que possuem a classe de animação
   const elementosAnimados = document.querySelectorAll('.animarScroll');
 
-  // Se não tiver nenhum elemento com a classe na página, ele não faz nada
+  // Segurança: Se não houver elementos com essa classe na página, encerra a função
   if (elementosAnimados.length === 0) return;
 
+  // Configuração do Observador de Interseção
   const observer = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach((entry) => {
-        // isIntersecting significa que o elemento entrou na tela do usuário
+        // Verifica se o elemento entrou na área visível do usuário
         if (entry.isIntersecting) {
-          // Adiciona a classe '.mostrar' que criamos no CSS
+          // Adiciona a classe '.mostrar' definida no seu CSS para iniciar a transição
           entry.target.classList.add('mostrar');
 
-          // Para de vigiar o elemento para a animação não repetir ao rolar pra cima
+          // Importante: Para de observar o elemento após a primeira exibição
+          // Isso evita que a animação se repita e economiza recursos do navegador
           observer.unobserve(entry.target);
         }
       });
     },
     {
-      threshold: 0.15, // A animação dispara quando 15% do bloco aparecer na tela
+      // Define que a animação dispara quando 15% do elemento estiver visível
+      threshold: 0.15,
     },
   );
 
-  // Manda o observador vigiar cada elemento encontrado
+  // Itera por cada elemento encontrado e inicia o monitoramento (vigília)
   elementosAnimados.forEach((elemento) => {
     observer.observe(elemento);
   });
