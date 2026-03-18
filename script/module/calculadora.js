@@ -1,12 +1,12 @@
 export function initCalculadora() {
   // Aguarda a página carregar
   document.addEventListener('DOMContentLoaded', function () {
-    // --- CÓDIGO DA MÁSCARA DE DINHEIRO (Mantenha o que você já tem aqui) ---
-    // ... seu código anterior que formata os inputs ...
+    // --- LÓGICA DA MÁSCARA DE DINHEIRO (Pode manter a sua aqui se estiver em outro lugar) ---
 
     // --- NOVA LÓGICA DA CALCULADORA ---
 
-    const botaoCalcular = document.querySelector('.botaoCalcular button');
+    // Seleciona o botão direto pela classe, já que removemos a tag <a>
+    const botaoCalcular = document.querySelector('.botaoCalcular');
     const inputs = document.querySelectorAll('.mascaraDinheiro');
 
     // Elementos que vamos mostrar/esconder na tela
@@ -21,21 +21,20 @@ export function initCalculadora() {
     // Função auxiliar para transformar "R$ 1.500,00" em número 1500.00
     function extrairNumero(textoDinheiro) {
       if (!textoDinheiro) return 0;
-      // Remove tudo que não for número ou vírgula, depois troca a vírgula por ponto
       let numeroLimpo = textoDinheiro.replace(/[^\d,]/g, '').replace(',', '.');
       return Number(numeroLimpo);
     }
 
     // Ação de clique no botão
     botaoCalcular.addEventListener('click', function (e) {
-      e.preventDefault(); // Evita que a página recarregue ao clicar no link
+      e.preventDefault(); // Evita que a página recarregue ao clicar
 
-      // 1. Pega os valores digitados (sabendo que a ordem é Salário [0], Gastos [1], Objetivo [2])
+      // 1. Pega os valores digitados
       let salario = extrairNumero(inputs[0].value);
       let gastos = extrairNumero(inputs[1].value);
       let objetivo = extrairNumero(inputs[2].value);
 
-      // Se algum valor estiver zerado, avisa o usuário (opcional)
+      // Se algum valor estiver zerado, avisa o usuário
       if (salario === 0 || objetivo === 0) {
         alert('Por favor, preencha o salário e o objetivo para calcular.');
         return;
@@ -55,7 +54,7 @@ export function initCalculadora() {
       // Atualiza o textão inicial
       txtValorCalculado.textContent = valorFormatado;
 
-      // Mostra as seções que estavam escondidas
+      // 4. Mostra as seções que estavam escondidas primeiro
       secaoDica.style.display = 'block';
       secaoSituacoes.style.display = 'block';
 
@@ -64,21 +63,21 @@ export function initCalculadora() {
       divNeutra.style.display = 'none';
       divOtima.style.display = 'none';
 
-      // 4. Decide qual situação mostrar com base nas regras do negócio
+      // 5. Decide qual situação mostrar com base nas regras do negócio
       if (gastos >= salario) {
-        // Se gasta mais do que ganha (ou igual)
         divCritica.style.display = 'block';
       } else if (saldoMensal >= quantoEconomizarPorMes) {
-        // Se o que sobra do salário paga a meta confortavelmente
         divOtima.style.display = 'block';
-
-        // Preenche as variáveis do texto da situação Ótima
         document.querySelector('.valorEconomizar').textContent = valorFormatado;
         document.querySelector('.mesesEconomizar').textContent = '24 meses';
       } else {
-        // Se sobra dinheiro, mas não é suficiente para a meta
         divNeutra.style.display = 'block';
       }
+
+      // 6. A MÁGICA DO SCROLL (Com o atraso de 100ms para funcionar!)
+      setTimeout(function () {
+        secaoDica.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
     });
   });
 }
