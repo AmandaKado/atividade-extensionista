@@ -1,30 +1,33 @@
+/**
+ * Módulo: Máscara de Dinheiro
+ * Formata os inputs em tempo real para o padrão R$ 0,00.
+ */
+
 export function initLabelValor() {
+  const inputsDinheiro = document.querySelectorAll('.mascaraDinheiro');
 
-  document.addEventListener('DOMContentLoaded', function () {
-    // Seleciona todos os inputs que têm a classe 'mascaraDinheiro'
-    const inputsDinheiro = document.querySelectorAll('.mascaraDinheiro');
+  // Se não houver inputs com essa classe na página, encerra a função
+  if (inputsDinheiro.length === 0) return;
 
-    inputsDinheiro.forEach((input) => {
-      input.addEventListener('input', function (e) {
-        // Pega o que foi digitado e remove tudo o que não for número
-        let valor = e.target.value.replace(/\D/g, '');
+  inputsDinheiro.forEach((input) => {
+    input.addEventListener('input', (e) => {
+      // Remove tudo o que não for número
+      let valor = e.target.value.replace(/\D/g, '');
 
-        // Se o usuário apagar tudo, deixa a caixa vazia
-        if (valor === '') {
-          e.target.value = '';
-          return;
-        }
+      // Se o campo estiver vazio, mantém vazio para mostrar o placeholder
+      if (valor === '') {
+        e.target.value = '';
+        return;
+      }
 
-        // Formata para o padrão de dinheiro do Brasil
-        valor = (Number(valor) / 100).toLocaleString('pt-BR', {
-          style: 'currency',
-          currency: 'BRL',
-        });
-
-        // Devolve o valor formatado para a caixinha
-        e.target.value = valor;
+      // Transforma os números em decimal (divindindo por 100) e formata como Moeda Brasileira
+      const valorFormatado = (Number(valor) / 100).toLocaleString('pt-BR', {
+        style: 'currency',
+        currency: 'BRL',
       });
+
+      // Devolve o valor formatado para o campo
+      e.target.value = valorFormatado;
     });
   });
-
 }
