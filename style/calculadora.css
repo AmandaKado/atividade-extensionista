@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* Container principal com fundo verde */
 .fundoVerde {
     display: flex;
     flex-direction: column;
@@ -10,6 +11,7 @@
     background-color: var(--verdeSuave);
 }
 
+/* Alinhamento dos ícones de status (carinhas) */
 .imagensCarinhas {
     display: flex;
     flex-direction: row;
@@ -19,6 +21,7 @@
     gap: 30px;
 }
 
+/* Estilo individual das imagens circulares de status */
 .imagensCarinhas img {
     padding: 5px;
     width: 80px;
@@ -31,11 +34,13 @@
     padding-top: 0;
 }
 
+/* Centralização de parágrafos na calculadora */
 p {
     text-align: center;
     padding: 0;
 }
 
+/* Container dos blocos de entrada de dados */
 .inputsBlocos {
     display: flex;
     flex-direction: column;
@@ -45,6 +50,7 @@ p {
     max-width: 500px; 
 }
 
+/* Estilo das linhas de input (label + campo) */
 .inputsBlocos > div {
     display: flex;
     align-items: center;
@@ -55,6 +61,7 @@ p {
     overflow: hidden;
 }
 
+/* Ajuste de proporção e fonte das labels */
 .inputsBlocos label {
     flex: 1; 
     padding-left: 20px;
@@ -62,18 +69,12 @@ p {
     font-size: 18px;
 }
 
-.n1 {
-    color: var(--verdeEscuro);
-}
+/* Cores específicas para as labels */
+.n1 { color: var(--verdeEscuro); }
+.n2 { color: var(--vermelhoEscuro); }
+.n3 { color: var(--azulEscuro); }
 
-.n2 {
-    color: var(--vermelhoEscuro);
-}
-
-.n3 {
-    color: var(--azulEscuro);
-}
-
+/* Estilo base dos campos de texto (inputs) */
 .inputsBlocos input {
     width: 150px;
     height: 100%;
@@ -89,6 +90,7 @@ p {
     color: var(--pretoSuave);
 }
 
+/* Remove setas padrão de campos numéricos */
 .inputsBlocos input[type="number"]::-webkit-inner-spin-button,
 .inputsBlocos input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -99,28 +101,23 @@ p {
     appearance: textfield;
 }
 
-.inputsBlocos > div:nth-child(1) input {
-    background-color: var(--verdeNormal); 
-}
+/* Cores de fundo específicas para cada campo de input */
+.inputsBlocos > div:nth-child(1) input { background-color: var(--verdeNormal); }
+.inputsBlocos > div:nth-child(2) input { background-color: var(--vermelho); }
+.inputsBlocos > div:nth-child(3) input { background-color: var(--azul); }
 
-.inputsBlocos > div:nth-child(2) input {
-    background-color: var(--vermelho); 
-}
-
-.inputsBlocos > div:nth-child(3) input {
-    background-color: var(--azul); 
-}
-
+/* Destaque no campo ao receber foco */
 .mascaraDinheiro:focus {
     font-weight: bold;
 }
 
+/* Estilo do botão de cálculo */
 .botaoCalcular {
     width: 100%;
-    max-width: 500px;
+    max-width: 290px;
     text-align: center;
     text-decoration: none; 
-    margin: 30px 0 40px 0;
+    margin: 0 30px 30px 30px;
     padding: 20px;
     background-color: var(--verdeAmarelo);
     color: var(--pretoSuave);
@@ -129,13 +126,16 @@ p {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
+    transition: transform 0.2s ease;
 }
 
 .botaoCalcular:hover {
     background-color: var(--laranja);
+    transform: scale(1.01);
 }
 
+/* Seção de exibição da dica de economia */
 #mensagemDica {
     display: flex;
     flex-direction: column;
@@ -143,9 +143,10 @@ p {
     margin: 30px 0;
     padding: 0 30px;
     color: var(--pretoSuave);
-    scroll-margin-top: 30px;
+    scroll-margin-top: 80px;
 }
 
+/* Caixa de alerta para erros de formulário */
 .erroFormulario {
     color: #c72c2c;
     background-color: #ffe6e6;
@@ -171,11 +172,13 @@ p {
     color: var(--pretoSuave);
 }
 
+/* Ajuste de tamanho dos ícones de feedback */
 .icones {
-    width: 200px;
+    width: 100px;
     height: auto;
 }
 
+/* Configuração da faixa de aviso inferior */
 .faixaAviso {
     display: flex;
     flex-direction: row;
@@ -193,19 +196,20 @@ p {
 .faixaAviso p {
     text-align: left;
     font-weight: normal;
-    font-size:1em;
+    font-size: 1em;
 }
 
+/* Linha vertical de detalhe na faixa */
 .linhaEnfeite {
     width: 2px;
     height: 30px;
     background-color: var(--pretoSuave);
 }
 
+/* Alinhamento dos blocos de situação final */
 #situacaoCritica, #situacaoNeutra, #situacaoOtima {
     display: flex; 
     flex-direction: column;
     align-items: center; 
     text-align: center; 
 }
-

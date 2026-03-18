@@ -1,11 +1,15 @@
-/* PRINCIPAL */
+/* ==========================================
+    ESTILOS DA SEÇÃO PRINCIPAL (HOME)
+   ========================================== */
 
+/* Imagem de destaque da primeira seção */
 #imagemSecao1 {
     max-width: 100%;
     height: auto;
     padding: 0px 30px;
 }
 
+/* Container da faixa de aviso horizontal */
 .faixaAviso {
     display: flex;
     flex-direction: row;
@@ -15,16 +19,19 @@
     padding: 30px;
 }
 
+/* Título dentro da faixa de aviso */
 .faixaAviso h2 {
     font-size: 1.5em;
     padding: 0;
 }
 
+/* Parágrafo dentro da faixa de aviso */
 .faixaAviso p {
     text-align: left;
     padding: 0;
 }
 
+/* Divisor vertical entre título e texto na faixa */
 .linhaEnfeite {
     background-color: var(--pretoSuave);
     border-radius: 100px;
@@ -33,25 +40,32 @@
     margin: 0px 15px;
 }
 
-#principal1 p, #principal3 p, #principal2 p {
+/* Configuração comum de parágrafos para as seções principais */
+#principal1 p, 
+#principal3 p, 
+#principal2 p {
     text-align: left;
     padding: 0px 30px;
 }
 
+/* Alinhamento e espaçamento do título da seção 2 */
 #principal2 h1 {
     text-align: left;
     padding: 30px;
 }
 
+/* Estilo de fundo e margem superior da seção 3 */
 #principal3 {
     background-color: var(--verdeSuave);
     margin-top: 30px;
 }
 
+/* Alinhamento do título da seção 3 */
 #principal3 h1 {
     text-align: left;
 }
 
+/* Imagem da seção 3 com espaçamento extra na base */
 #imagemSecao2 {
     max-width: 100%;
     height: auto;

@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
-/* CORES */
-
+/* ==========================================
+    VARIÁVEIS DE CORES
+   ========================================== */
 :root {
     --verdeClaro: #B1FA73;
     --verdeSuave: #96E072;
@@ -18,12 +19,14 @@
     --preto: #000000;
 }
 
-/* PADRÃO */
-
+/* ==========================================
+    CONFIGURAÇÕES PADRÃO E GLOBAIS
+   ========================================== */
 html {
     scroll-behavior: smooth;
 }
 
+/* Estilo base para elementos com animação de scroll */
 .animarScroll {
     opacity: 0;
     transform: translateY(50px); 
@@ -36,6 +39,7 @@ html {
     transform: translateY(0);
 }
 
+/* Reset básico de margens e box-sizing */
 * {
     margin: 0;
     padding: 0;
@@ -60,6 +64,7 @@ span {
     font-weight: bold;
 }
 
+/* Reset de estilo para botões */
 button {
     all: unset;
     cursor: pointer;
@@ -87,6 +92,9 @@ p {
     padding: 0px 30px;
 }
 
+/* ==========================================
+    COMPONENTES (BOTÕES ESPECÍFICOS)
+   ========================================== */
 .botaoVerde {
     padding: 20px 30px;
     margin: 30px;
@@ -124,8 +132,9 @@ p {
     transition-duration: 0.2s;
 }
 
-/* CABEÇALHO */
-
+/* ==========================================
+    CABEÇALHO E MENU NAVEGAÇÃO
+   ========================================== */
 header {
     display: flex;
     justify-content: space-between;
@@ -139,6 +148,7 @@ header img {
     cursor: pointer;
 }
 
+/* Menu Mobile/Dropdown */
 #menu {
     opacity: 0;
     transform: translateY(-10px);
@@ -154,6 +164,7 @@ header img {
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
+/* Triângulo decorativo do menu */
 .seta {
     width: 0;
     height: 0;
@@ -184,8 +195,9 @@ header img {
     pointer-events: auto;
 }
 
-/* RODAPÉ */
-
+/* ==========================================
+    RODAPÉ (FOOTER)
+   ========================================== */
 footer {
     font-size: 0.7em;
 }
@@ -239,6 +251,7 @@ footer ul li {
     padding-left: 15px;
 }
 
+/* Marcador personalizado para itens da lista do footer */
 footer ul li::before {
     content: "";
     position: absolute;
@@ -266,10 +279,9 @@ footer a:hover {
     text-decoration: underline;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
+/* ==========================================
+    BOTÃO VOLTAR AO TOPO E KEYFRAMES
+   ========================================== */
 .voltarTopo {
     position: fixed;
     bottom: 20px;   

@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
-/* ELEMENTOS */
+/* ==========================================
+    ELEMENTOS GERAIS
+   ========================================== */
 
+/* Bloco de destaque para dicas com borda colorida */
 .janelaDicas {
     display: flex;
     border: 5px solid var(--verdeAmarelo);
@@ -12,18 +15,23 @@
     text-align: left;
 }
 
+/* Efeito de destaque ao passar o mouse na dica */
 .janelaDicas:hover {
     background-color: rgba(250, 245, 171, 0.425);
 }
 
+/* Linha divisória entre o conteúdo e o rodapé */
 #divisao {
     width: 100vw;
     height: 10px;
     background-color: var(--verdeSuave);
 }
 
-/* INTRODUÇÃO */
+/* ==========================================
+    INTRODUÇÃO E TÍTULO PRINCIPAL
+   ========================================== */
 
+/* Faixa amarela de introdução */
 .tituloAmarelo {
     display: flex;
     flex-direction: row;
@@ -35,6 +43,7 @@
     padding: 30px;
 }
 
+/* Estilo do texto do título da página */
 .titulo {
     font-size: 2em;
     text-align: left;
@@ -42,14 +51,18 @@
     color: var(--pretoSuave);
 }
 
+/* Ajuste da imagem decorativa ao lado do título */
 .imagemAmarelo {
     width: 60px;
     height: auto;
     padding: 0;
 }
 
-/* SEÇÕES */
+/* ==========================================
+    SEÇÕES DE AULAS (TÍTULOS NUMERADOS)
+   ========================================== */
 
+/* Faixa verde de cabeçalho das aulas */
 .titulosAulas {
     display: flex;
     align-items: center;
@@ -59,11 +72,13 @@
     padding: 30px;
 }
 
+/* Estilo do número da aula em destaque */
 .numeroAula {
     font-size: 4em;
     padding: 0px;
 }
 
+/* Linha decorativa entre o número e o título da aula */
 .enfeiteLinha {
     width: 2px;
     height: 60px;
@@ -72,15 +87,18 @@
     margin: 0px 10px;
 }
 
+/* Texto do título numerado da aula */
 .tituloAulaNumerada {
     font-size: 1.5em;
     text-align: left;
     padding: 0px;
 }
 
+/* ==========================================
+    ESTILIZAÇÃO DA TABELA DE INVESTIMENTOS
+   ========================================== */
 
-/* TABELA */
-
+/* Container da tabela com bordas arredondadas e sombra */
 #tabela {
     width: 80%; 
     max-width: 600px; 
@@ -91,6 +109,7 @@
     margin: 15px auto; 
 }
 
+/* Estilo das células (cabeçalho e corpo) */
 #tabela th,
 #tabela td {
     padding: 12px 15px; 
@@ -98,6 +117,7 @@
     word-wrap: wrap;
 }
 
+/* Cabeçalho da tabela com fundo verde transparente */
 #tabela thead {
     background-color: rgba(144, 238, 144, 0.7);
     color: #333;
@@ -108,15 +128,18 @@
     font-weight: bold;
 }
 
+/* Alinhamento do conteúdo das células */
 #tabela tbody td {
     text-align: left;
     vertical-align: top;
 }
 
+/* Efeito zebrado (cores alternadas nas linhas) */
 #tabela tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
+/* Destaque visual ao passar o mouse na linha da tabela */
 #tabela tbody tr:hover {
     background-color: #e0fae4;
 }
