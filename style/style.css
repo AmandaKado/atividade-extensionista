@@ -318,12 +318,11 @@ footer a:hover {
    ========================================== */
 
 @media screen and (min-width: 1024px) {
-    /* 1. Esconde o ícone do hambúrguer */
+
     #menuHamburguer {
         display: none;
     }
 
-    /* 2. Ajusta o Header para distribuir os itens horizontalmente */
     header {
         display: flex;
         justify-content: space-between;
@@ -334,47 +333,32 @@ footer a:hover {
         position: relative;
     }
 
-    /* 3. Reseta o Nav (Menu) */
     #menu {
         opacity: 1 !important;
         transform: none !important;
         pointer-events: auto !important;
-        position: static; /* Remove o modo flutuante/dropdown */
+        position: static;
         background-color: transparent;
         box-shadow: none;
-        padding: 0;
-        display: flex; /* Alinha os links lado a lado */
-        gap: 30px;    /* Espaço entre os links */
+        display: flex; 
+        gap: 60px;  
     }
 
-    /* 4. Esconde a setinha decorativa do mobile */
-    .seta {
-        display: none;
-    }
-
-    /* 5. Estilo dos Links no Desktop */
     #menu a {
-        padding: 0;
-        font-size: 1.1em;
-        white-space: nowrap;
-        color: var(--verdeEscuro);
-        position: relative;
-        text-decoration: none;
+        font-size: 1.2em;
     }
 
-    /* 6. Efeito de Hover e Página Ativa */
     #menu a:hover {
-        color: var(--verdeNormal);
-        transition: 0.3s;
+        color: var(--verdeEscuro);
+        text-decoration: underline;
     }
 
-    /* Underline no primeiro item (como na sua imagem original) */
     #menu a:first-child {
         text-decoration: underline;
     }
 
-    /* Ajuste do ícone do Header */
     #iconeHeader {
-        width: 110px;
+        width: 120px;
     }
+
 }
