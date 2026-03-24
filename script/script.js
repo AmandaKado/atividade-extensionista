@@ -8,6 +8,7 @@ import { initCalculadora } from './module/calculadora.js';
 import { initMenuHamburguer } from './module/menu.js';
 import { initLabelValor } from './module/labelValor.js';
 import { initAnimacaoScroll } from './module/animacaoScroll.js';
+import { initTermos } from './module/termos.js';
 
 // --- Inicialização das Funcionalidades ---
 
@@ -22,3 +23,6 @@ initLabelValor();
 
 // Ativa o observador de scroll para disparar animações de entrada
 initAnimacaoScroll();
+
+// Ativa a exibição do modal de termos de uso e o armazenamento da aceitação
+initTermos();
