@@ -213,3 +213,7 @@ p {
     align-items: center; 
     text-align: center; 
 }
+
+@media screen and (min-width: 1024px) {
+
+}

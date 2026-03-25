@@ -71,3 +71,7 @@
     height: auto;
     padding: 0px 30px 30px 30px;
 }
+
+@media screen and (min-width: 1024px) {
+
+}
