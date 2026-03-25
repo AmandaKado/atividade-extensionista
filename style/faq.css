@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* ==========================================
+    ESTILIZAÇÃO ESPECÍFICA PARA A PÁGINA DE FAQ
+   ========================================== */
+
+article {
+    padding: 20px;
+    background-color: var(--cinzaClaro);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h3 {
+    color: var(--preto);
+    margin-bottom: 15px;
+}
+
+p {
+    color: var(--pretoSuave);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.divisoria {
+    width: 100%;
+    height: 2px;
+    background-color: var(--verdeEscuro);
+    margin: 20px 0;
+}
+
+@media screen and (min-width: 1024px) {
+    article {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.25em;
+    }
+
+    p {
+        text-align: left;
+    }
+}
