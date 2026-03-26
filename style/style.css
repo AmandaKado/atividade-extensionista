@@ -389,6 +389,8 @@ footer a:hover {
 
 @media screen and (min-width: 1024px) {
 
+    /* Menu desktop */
+
     #menuHamburguer {
         display: none;
     }
@@ -398,7 +400,7 @@ footer a:hover {
         justify-content: space-between;
         align-items: center;
         padding: 30px 10%;
-        max-width: 1400px;
+        max-width: 1600px;
         margin: 0 auto;
         position: relative;
     }
@@ -426,31 +428,81 @@ footer a:hover {
         width: 120px;
     }
 
-    main h1 {
-        font-size: 2em;
-        text-align: left;
-    }
+    /* Seção1 desktop */
 
     #principal1 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 30px;
-        min-width: 900px;
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: flex-end !important;
+        padding: 0 10% !important; 
+        text-align: left !important;
+        max-width: 1600px;
+        margin: 0 auto;
+        overflow: hidden; 
     }
 
     #principal1 div {
-        max-width: 500px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        justify-content: center;
+        padding-bottom: 60px; 
+        max-width: 600px;
     }
 
-    .linkDoBotao {
-        width: 100%;
+    #principal1 h1 {
+        font-size: 2.2em;
+        text-align: left;
+        line-height: 1.1;
+    }
+
+    #principal1 p {
+        font-size: 1.2em;
+        padding: 30px;
+        text-align: left;
+    }
+
+    #principal1 a {
+        margin-left: 30px;
+        width: 400px;
+    }
+
+    #principal1 .botaoVerde {
+        margin: 30px 0 0 0;
     }
 
     #imagemSecao1 {
-        width: 600px;
+        width: auto !important;
+        max-width: 80% !important; 
+        height: auto;
+        display: block;
+        margin-bottom: -5px; 
+        align-self: flex-end;
     }
+
+    .faixaAviso {
+        flex-direction: row !important;
+        padding: 40px 0 40px 340px !important;
+    }
+
+    .faixaAviso h2 {
+        font-size: 2.2em;
+        padding: 0;
+    }
+
+    .faixaAviso p {
+        font-size: 1.6em;
+        padding: 0;
+    }
+
+    .linhaEnfeite {
+        height: 60px;
+        width: 3px;
+        margin: 0 40px;
+    }
+
+    /* Rodapé desktop */
 
     footer {
         display: flex;
