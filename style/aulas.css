@@ -150,10 +150,13 @@
         padding: 30px 150px;
     }
 
-    .divAulas {
-        padding: 30px 150px;
-        margin: 0px;
-        text-align: left;
+    .enfeiteLinha {
+        margin: 0px 30px;
+        height: 50px;
     }
 
+    .tituloAulaNumerada {
+        font-size: 2em;
+    }
+    
 }
