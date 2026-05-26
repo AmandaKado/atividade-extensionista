@@ -146,4 +146,14 @@
 
 @media screen and (min-width: 1024px) {
 
+    .tituloAmarelo, .titulosAulas{
+        padding: 30px 150px;
+    }
+
+    .divAulas {
+        padding: 30px 150px;
+        margin: 0px;
+        text-align: left;
+    }
+
 }
