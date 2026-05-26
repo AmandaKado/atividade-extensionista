@@ -150,6 +150,8 @@ header img {
 
 /* Menu Mobile/Dropdown */
 #menu {
+    display: flex;
+    flex-direction: column;
     opacity: 0;
     transform: translateY(-10px);
     pointer-events: none;
@@ -185,7 +187,7 @@ header img {
 }
 
 #menu a:hover {
-    color: var(--brancoSuave);
+    color: var(--preto);
     transition-duration: 0.3s;
 }
 
