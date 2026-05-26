@@ -408,6 +408,8 @@ footer a:hover {
     }
 
     #menu {
+        display: flex !important;
+        flex-direction: row !important;
         opacity: 1 !important;
         transform: none !important;
         pointer-events: auto !important;
