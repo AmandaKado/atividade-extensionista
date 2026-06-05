@@ -216,4 +216,129 @@ p {
 
 @media screen and (min-width: 1024px) {
 
+    .sect1Pc {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 90px 10% !important;
+        margin: 0 auto;
+        gap: 120px;
+    }
+
+    #calc1 {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start !important;
+        text-align: left !important;
+        max-width: 500px;
+    }
+
+    .imagensCarinhas {
+        display: flex;
+        justify-content: flex-start !important;
+        align-items: flex-end !important;
+        margin: 0 0 20px 0 !important;
+        gap: 30px;
+        height: 110px;
+    }
+
+    /* 1ª Carinha (Triste) - Pequena */
+    .imagensCarinhas img:nth-child(1) {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    /* 2ª Carinha (Neutra) - Média */
+    .imagensCarinhas img:nth-child(2) {
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    /* 3ª Carinha (Feliz) - Grande */
+    .imagensCarinhas img:nth-child(3) {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    .tituloSimulacao {
+        text-align: left !important;
+        padding: 0 0 20px 0 !important;
+        font-size: 3em;
+        line-height: 1.2;
+    }
+
+    .paragrafoCalculadora {
+        text-align: left !important;
+        padding: 0 !important;
+        font-size: 1.5em; /* CORREÇÃO: era 1.5m */
+    }
+
+    .sect1Pc > div:last-child {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .inputsBlocos {
+        width: 490px;
+        padding: 0 0 20px 0 !important;
+    }
+
+    .botaoCalcular {
+        margin: 20px 0 0 0 !important;
+        max-width: 450px;
+        align-self: flex-start; /* Força o botão a se alinhar à esquerda do bloco dele */
+    }
+
+    .erroFormulario {
+        margin: 20px 0 0 0 !important;
+    }
+
+    #mensagemDica {
+        margin: 60px auto;
+        padding: 30px 0;
+        font-size: 1.5em;
+        width: 1200px;
+    }
+
+    #secaoSituacoes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;     
+    }
+
+    #secaoSituacoes h1, #secaoSituacoes p {
+        text-align: left;
+        padding: 0; 
+    }
+
+    #secaoSituacoes p {
+        font-size: 1.2em;
+    }
+
+    .espacoSituacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    #situacaoCritica, #situacaoNeutra, #situacaoOtima {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 60px 0;
+        width: 1200px;
+    }
+
+    .icones {
+        width: 120px;
+        height: auto;
+    }
 }

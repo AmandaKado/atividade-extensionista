@@ -78,7 +78,7 @@ export function initCalculadora() {
       // Atualiza o texto do valor e exibe as seções de resultado
       txtValorCalculado.textContent = valorFormatado;
       secaoDica.style.display = 'block';
-      secaoSituacoes.style.display = 'block';
+      secaoSituacoes.style.display = 'flex';
 
       // Reseta a visibilidade das situações antes da nova validação
       divCritica.style.display = 'none';
@@ -87,14 +87,14 @@ export function initCalculadora() {
 
       // Lógica de classificação baseada no saldo disponível
       if (gastos >= salario) {
-        divCritica.style.display = 'block';
+        divCritica.style.display = 'flex';
       } else if (saldoMensal >= quantoEconomizarPorMes) {
-        divOtima.style.display = 'block';
+        divOtima.style.display = 'flex';
         // Atualiza detalhes específicos dentro da situação ótima
         document.querySelector('.valorEconomizar').textContent = valorFormatado;
         document.querySelector('.mesesEconomizar').textContent = '24 meses';
       } else {
-        divNeutra.style.display = 'block';
+        divNeutra.style.display = 'flex';
       }
 
       // Rola a página suavemente até o resultado calculado
