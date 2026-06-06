@@ -114,10 +114,10 @@ p {
 /* Estilo do botão de cálculo */
 .botaoCalcular {
     width: 100%;
-    max-width: 290px;
+    max-width: 310px;
     text-align: center;
     text-decoration: none; 
-    margin: 0 30px 30px 30px;
+    margin: 0 auto;
     padding: 20px;
     background-color: var(--verdeAmarelo);
     color: var(--pretoSuave);
