@@ -215,6 +215,10 @@ p {
 }
 
 @media screen and (min-width: 1024px) {
+    
+    header {
+        padding: 30px 10% !important;
+    }
 
     .sect1Pc {
         flex-direction: row !important;
