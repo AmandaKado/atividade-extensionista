@@ -35,7 +35,10 @@
     margin: 0px 15px;
 }
 
-#principal1 p, 
+#principal1 p {
+    text-align: center;
+} 
+
 #principal3 p, 
 #principal2 p {
     text-align: left;
