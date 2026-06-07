@@ -73,3 +73,9 @@
     height: auto;
     padding: 30px;
 }
+
+@media screen and (min-width: 1024px) {
+    #principal1 p {
+        text-align: left;
+    }
+}

@@ -104,7 +104,7 @@ p {
     text-decoration: none; 
     margin: 0;
     padding: 20px 0; 
-    width: calc(100vw - 60px); 
+    width: calc(100vw - 70px); 
     
     background-color: var(--verdeAmarelo);
     color: var(--pretoSuave);
