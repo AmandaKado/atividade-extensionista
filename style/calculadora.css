@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-/* Container principal com fundo verde */
 .fundoVerde {
     display: flex;
     flex-direction: column;
@@ -11,7 +10,6 @@
     background-color: var(--verdeSuave);
 }
 
-/* Alinhamento dos ícones de status (carinhas) */
 .imagensCarinhas {
     display: flex;
     flex-direction: row;
@@ -21,7 +19,6 @@
     gap: 30px;
 }
 
-/* Estilo individual das imagens circulares de status */
 .imagensCarinhas img {
     padding: 5px;
     width: 80px;
@@ -34,23 +31,18 @@
     padding-top: 0;
 }
 
-/* Centralização de parágrafos na calculadora */
 p {
     text-align: center;
     padding: 0;
 }
 
-/* Container dos blocos de entrada de dados */
 .inputsBlocos {
     display: flex;
     flex-direction: column;
     padding: 30px 0;
     gap: 15px; 
-    width: 100%;
-    max-width: 500px; 
 }
 
-/* Estilo das linhas de input (label + campo) */
 .inputsBlocos > div {
     display: flex;
     align-items: center;
@@ -61,7 +53,6 @@ p {
     overflow: hidden;
 }
 
-/* Ajuste de proporção e fonte das labels */
 .inputsBlocos label {
     flex: 1; 
     padding-left: 20px;
@@ -69,14 +60,12 @@ p {
     font-size: 18px;
 }
 
-/* Cores específicas para as labels */
 .n1 { color: var(--verdeEscuro); }
 .n2 { color: var(--vermelhoEscuro); }
 .n3 { color: var(--azulEscuro); }
 
-/* Estilo base dos campos de texto (inputs) */
 .inputsBlocos input {
-    width: 150px;
+    width: 200px;
     height: 100%;
     border: none;
     outline: none;
@@ -90,7 +79,6 @@ p {
     color: var(--pretoSuave);
 }
 
-/* Remove setas padrão de campos numéricos */
 .inputsBlocos input[type="number"]::-webkit-inner-spin-button,
 .inputsBlocos input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -106,22 +94,19 @@ p {
 .inputsBlocos > div:nth-child(2) input { background-color: var(--vermelho); }
 .inputsBlocos > div:nth-child(3) input { background-color: var(--azul); }
 
-/* Destaque no campo ao receber foco */
 .mascaraDinheiro:focus {
     font-weight: bold;
 }
 
-/* Estilo do botão de cálculo */
 .botaoCalcular {
     width: 100%;
-    max-width: 310px;
+    max-width: 290px;
     text-align: center;
     text-decoration: none; 
     margin: 0 auto;
     padding: 20px;
     background-color: var(--verdeAmarelo);
     color: var(--pretoSuave);
-    font-size: 22px;
     font-weight: bold;
     border: none;
     border-radius: 10px;
