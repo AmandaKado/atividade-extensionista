@@ -615,7 +615,7 @@ footer a:hover {
     }
 
     .divisoriaVerde {
-        background-color: var(--pretoSuave);
+        background-color: var(--verdeSuave);
         width: 100%;
         height: 5px;
     }
