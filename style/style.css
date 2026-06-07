@@ -98,6 +98,7 @@ p {
     display: flex;
     padding: 20px 30px;
     margin: 30px;
+    width: 100vw;
     font-size: 1.1em;
     font-weight: bold;
     border-radius: 10px;
