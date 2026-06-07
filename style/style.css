@@ -448,56 +448,56 @@ footer a:hover {
     /* Seção1 desktop */
 
     #principal1 {
-        flex-direction: row !important;
+        display: flex !important;
+        flex-direction: row !important; 
         justify-content: space-between;
-        align-items: flex-end !important;
-        padding: 0 10% !important; 
-        text-align: left !important;
-        max-width: 1600px;
+        align-items: flex-end; 
         margin: 0 auto;
+        padding: 60px 10% 0 10%;
         overflow: hidden; 
     }
 
-    #principal1 div {
-        flex: 1;
+    #textoPrincipal1 {
+        width: 40%;
         display: flex;
         flex-direction: column;
-        align-items: flex-start; 
+        align-items: flex-start;
         justify-content: center;
-        padding-bottom: 60px; 
-        max-width: 600px;
+        padding: 0 0 60px 0;
     }
 
     #principal1 h1 {
-        font-size: 2.2em;
+        font-size: 2.5em;
         text-align: left;
-        line-height: 1.1;
+        line-height: 1.2;
+        padding: 0 0 20px 0;
     }
 
     #principal1 p {
         font-size: 1.2em;
-        padding: 30px;
+        padding: 0 0 30px 0;
         text-align: left;
     }
 
-    #principal1 a {
-        margin-left: 30px;
-        width: 400px;
+    #principal1 .linkDoBotao {
+        justify-content: flex-start;
+        margin: 0;
     }
 
     #principal1 .botaoVerde {
-        margin: 30px 0 0 0;
+        margin: 0;
+        width: 100%;
+        padding: 20px 40px;
     }
 
     #imagemSecao1 {
-        width: auto !important;
-        max-width: 80% !important; 
+        width: 60%;
         height: auto;
-        display: block;
-        margin-bottom: -5px; 
-        align-self: flex-end;
+        max-width: 60%;
+        margin: 0 0 -5px 0;
+        padding: 0;
+        align-self: self-end;
     }
-
     .faixaAviso {
         flex-direction: row !important;
         padding: 40px 20% !important; 
@@ -609,10 +609,6 @@ footer a:hover {
     #principal3 a {
         margin-left: 30px;
         width: 500px;
-    }
-
-    #principal1 .botaoAmarelo {
-        margin: 30px 0 0 0;
     }
 
     .botaoAmarelo {
