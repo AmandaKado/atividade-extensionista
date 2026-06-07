@@ -448,8 +448,8 @@ footer a:hover {
     /* Seção1 desktop */
 
     #principal1 {
-        display: flex !important;
-        flex-direction: row !important; 
+        display: flex;
+        flex-direction: row; 
         justify-content: space-between;
         align-items: flex-end; 
         margin: 0 auto;
@@ -491,12 +491,11 @@ footer a:hover {
     }
 
     #imagemSecao1 {
-        width: 60%;
+        width: 800px;
         height: auto;
         max-width: 60%;
         margin: 0 0 -5px 0;
         padding: 0;
-        align-self: self-end;
     }
     .faixaAviso {
         flex-direction: row !important;
