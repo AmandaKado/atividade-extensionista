@@ -117,12 +117,18 @@ main section {
     text-align: center;
 }
 
-.botaoVerde {
+.botaoVerdeTermos {
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.botaoVerde, .botaoVerdeTermos {
     background-color: var(--verdeSuave);
     color: var(--verdeEscuro);
 }
 
-.botaoVerde:hover {
+.botaoVerde:hover, .botaoVerdeTermos:hover {
     background-color: var(--verdeEscuro);
     color: var(--verdeSuave);
     transition-duration: 0.8s;
